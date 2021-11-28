@@ -25,10 +25,13 @@
     // with these React API calls
     // 💰 The example in the markdown file should be a good hint for you.
 
+    const spanElementOne = React.createElement('span', null, 'Hello')
+    const spanElementTwo = React.createElement('span', null, ' world')
+
     const elementProps = {
       className: 'container',
       props: null,
-      children: 'Hello world',
+      children: [spanElementOne, spanElementTwo],
     }
     const elementType = 'div'
     const newElement = React.createElement(elementType, elementProps)
